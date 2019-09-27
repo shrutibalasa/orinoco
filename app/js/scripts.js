@@ -18,6 +18,7 @@ if(localStorage.cartCount && localStorage.cartCount != 0) {
 
 /* Function to get Query Parameters from URL */
 const getQueryStringParameters = url => {
+	let query = "";
 	if (url){
 		if(url.split("?").length > 0){
 			query = url.split("?")[1];
