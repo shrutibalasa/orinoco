@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet"> 
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Orinoco | Shopping Cart</title>
+		<script src="js/polyfill.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="top-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							Welcome to Orinoco!
+						</div>
+						<div class="col ml-auto text-right">
+							<nobr><i class="fa fa-phone"></i> (+100) 123-456-7890</nobr>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-container">
+				<div class="container">
+					<div class="row">
+						<nav class="col navbar navbar-expand">
+							<a class="navbar-brand" href="index.html">
+								<img id="logo-img" src="images/logo.png" height="55">
+							</a>
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a href="cart.html" class="cart-link">
+										<i class="fa fa-shopping-cart icon-cart"></i> <span class="cart-count"></span> Shopping Cart
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="categories-div">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-auto category-active">
+							<a href="index.html" class="category-link">Teddy Bears</a>
+						</div>
+						<div class="col-auto mx-sm-3">
+							<a href="#" class="category-link">Vintage Cameras</a>
+						</div>
+						<div class="col-auto">
+							<a href="#" class="category-link">Oak Furniture</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main-section">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3><br>Checkout</h3>
+					</div>
+				</div>
+				<div class="row mt-3 cart-div">
+					<div class="col-lg-8 col-md-7">
+						<div class="contact-details">
+							<span class="pull-right text-danger">* Required fields</span>
+							<h4 class="pb-2 color-purple">Billing Address</h4>
+							<form class="needs-validation">
+								<div class="form-group">
+									<label for="firstName">First Name *</label>
+									<input type="text" class="form-control" id="firstName" placeholder="Enter first name" name="firstName" required>
+									<div class="invalid-feedback blank-msg">Please fill out this field.</div>
+								</div>
+								<div class="form-group">
+									<label for="lastName">Last Name *</label>
+									<input type="text" class="form-control" id="lastName" placeholder="Enter last name" name="lastName" required>
+									<div class="invalid-feedback blank-msg">Please fill out this field.</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Email *</label>
+									<input type="email" class="form-control" id="email" pattern=".+@.+\..+" placeholder="Enter email" name="email" required>
+									<div class="invalid-feedback blank-msg">Please fill out this field.</div>
+									<div class="invalid-feedback incorrect-msg">Invalid eMail</div>
+								</div>
+								<div class="form-group">
+									<label for="address">Address *</label>
+									<input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required>
+									<div class="invalid-feedback blank-msg">Please fill out this field.</div>
+								</div>
+								<div class="form-group">
+									<label for="city">City *</label>
+									<input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required>
+									<div class="invalid-feedback blank-msg">Please fill out this field.</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-5">
+						<div class="cart-summary">
+							<h4 class="pb-2 color-purple">Cart Summary</h4>
+							<div class="cart-summary-heading">
+								<div class="pull-left"><strong>ITEM</strong></div>
+								<div class="pull-right"><strong>PRICE</strong></div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="container mt-3 px-0 cart-summary-products">
+								<!--<div class="row mb-3">
+									<div class="col-auto">
+										<img class="cart-summary-image" src="../images/teddy_1.jpg"><br>
+										<div class="cart-summary-name">Norbert</div>
+										<div class="small">Handmade Teddy Bears</div>
+									</div>
+									<div class="col-auto ml-auto">
+										&euro; 2900
+									</div>
+								</div>-->
+							</div>
+							<div class="container px-0">
+								<div class="row mb-3 grand-total-row">
+									<div class="col-auto">
+										Grand total
+									</div>
+									<div class="col-auto ml-auto grand-total">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<button type="submit" class="btn btn-dark process-order-button" style="width: 100%">PROCESS ORDER</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row empty-cart-div">
+					<div class="col-12">
+						<h2>Shopping cart empty!</h2>
+						<img src="images/empty-shopping-cart.jpg"><br><br>
+						Looks like you forgot to add your favorite teddy bears to your shopping cart.<br>
+						Go back to <a href="index.html">products page</a>
+					</div>
+				</div>
+			</div>
+			<br><br>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						&copy; 2019 Orinoco. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
+		<script type="text/javascript">
+
+			let itemsArray = getArrayOfProductIds();
+			displayCartSummary(itemsArray);
+
+			const firstNameField = document.querySelector('#firstName');
+			const lastNameField = document.querySelector('#lastName');
+			const emailField = document.querySelector('#email');
+			const addressField = document.querySelector('#address');
+			const cityField = document.querySelector('#city');
+
+			/* Regex for email validation */
+			let re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+			/* Form validation on user input - On input blur, show error message if field is blank */
+			let formFields = document.querySelectorAll('input');
+			for (let i = 0; i < 5; i++){
+				formFields[i].addEventListener('blur', ($event) => {
+					if($event.target.id == "email") {
+
+						/* Only for email field, validate using regex */
+						if($event.target.value == "") {
+							emailField.parentNode.querySelector('.blank-msg').style.display = "block";
+							emailField.parentNode.querySelector('.incorrect-msg').style.display = "none";
+						} else if (!re.test($event.target.value)) {
+							emailField.parentNode.querySelector('.blank-msg').style.display = "none";
+							emailField.parentNode.querySelector('.incorrect-msg').style.display = "block";
+						} else {
+							emailField.parentNode.querySelector('.blank-msg').style.display = "none";
+							emailField.parentNode.querySelector('.incorrect-msg').style.display = "none";
+						}
+					} else {
+						
+						/* For other fields just check if value is blank */
+						if($event.target.value == "") {
+							formFields[i].parentNode.querySelector('.blank-msg').style.display = "block";
+						} else {
+							formFields[i].parentNode.querySelector('.blank-msg').style.display = "none";
+						}
+					}
+				});
+			}
+
+			/* Collect form data and post to server */
+			const processOrderButton = document.querySelector('.process-order-button');
+			processOrderButton.addEventListener('click', ($event) => {
+				$event.preventDefault();
+				if(firstNameField.value != "" && lastNameField.value != "" && emailField.value != "" && addressField.value != "" && cityField.value != "" && re.test(emailField.value)) {
+					let contact = {
+						"firstName" : firstNameField.value,
+						"lastName" : lastNameField.value,
+						"email" : emailField.value,
+						"address" : addressField.value,
+						"city" : cityField.value
+					};
+					let products = JSON.parse(localStorage.cartItems, true);
+					let data = {
+						"contact" : contact,
+						"products" : products
+					};
+					processOrder(JSON.stringify(data));
+				} else {
+					for (let i = 0; i < 5; i++){
+						if(formFields[i].value == "") {
+							formFields[i].parentNode.querySelector('.blank-msg').style.display = "block";
+						} else {
+							formFields[i].parentNode.querySelector('.blank-msg').style.display = "none";
+						}
+					}
+				}
+			});
+
+		</script>
+	</body>
+</html>
